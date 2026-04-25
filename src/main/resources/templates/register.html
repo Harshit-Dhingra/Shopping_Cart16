@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="~{base :: layout(~{::section})}">
+    <section>
+        <section>
+            <div class="container mt-3">
+                <div class="row align-items-center" style="min-height: 85vh;">
+
+                    <!-- LEFT IMAGE -->
+                    <div class="col-md-6 text-center">
+                        <img th:src="@{/css/img/Login_1.jpeg}"
+                             class="img-fluid" style="max-height: 320px;">
+                    </div>
+
+                    <!-- RIGHT REGISTER FORM -->
+                    <div class="col-md-6">
+                        <div class="card shadow" style="border-radius: 10px;">
+
+                            <!-- HEADER -->
+                            <div class="card-header text-center bg-light">
+                                <h5 class="mb-0">Create Account</h5>
+                            </div>
+
+                            <!-- BODY -->
+                            <div class="card-body" style="padding: 20px;">
+
+                                <form>
+
+                                    <!-- NAME + MOBILE -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <input type="text" class="form-control" placeholder="Full Name" name="name">
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <input type="text" class="form-control" placeholder="Mobile Number" name="mobile">
+                                        </div>
+                                    </div>
+
+                                    <!-- EMAIL -->
+                                    <div class="mb-2">
+                                        <input type="email" class="form-control" placeholder="Email" name="email">
+                                    </div>
+
+                                    <!-- ADDRESS + CITY -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <input type="text" class="form-control" placeholder="Address" name="address">
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <input type="text" class="form-control" placeholder="City" name="city">
+                                        </div>
+                                    </div>
+
+                                    <!-- STATE + PINCODE -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <input type="text" class="form-control" placeholder="State" name="state">
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <input type="text" class="form-control" placeholder="Pincode" name="pincode">
+                                        </div>
+                                    </div>
+
+                                    <!-- PASSWORD -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <input type="password" class="form-control" placeholder="Password" name="password">
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <input type="password" class="form-control" placeholder="Confirm Password" name="confirmPassword">
+                                        </div>
+                                    </div>
+
+                                    <!-- FILE -->
+                                    <div class="mb-3">
+                                        <input type="file" class="form-control">
+                                    </div>
+
+                                    <!-- BUTTON -->
+                                    <button class="btn btn-primary w-100">Register</button>
+
+                                </form>
+                            </div>
+
+                            <!-- FOOTER -->
+                            <div class="card-footer text-center bg-light">
+                                <small>
+                                    Already have an account?
+                                    <a href="/login" class="text-primary">Login</a>
+                                </small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+<h1>Register Page</h1>
+</body>
+</html>

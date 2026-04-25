@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Base</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+</head>
+<body>
+<div th:replace="~{base :: layout(~{::section})}">
+    <section>
+        <!-- Start Slider-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img th:src="@{/css/img/img.1.jpeg}" class="d-block w-100" alt="..."
+                    height="400px">
+                </div>
+                <div class="carousel-item">
+                    <img th:src="@{/css/img/img.2.jpeg}" class="d-block w-100" alt="..."
+                         height="400px">
+                </div>
+                <div class="carousel-item">
+                    <img th:src="@{/css/img/img.3.jpeg}" class="d-block w-100" alt="..."
+                         height="400px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End Slider -->
+        <!--Start Category Module-->
+    <div class="container">
+        <div class="row">
+            <p class="text-center fs-4">Category</p>
+            <div class="col-md-2">
+                <div class="card rounded-circle">
+                    <div class="card-body text-center">
+                        <img th:src="@{/css/img/appli.2.jpeg}"  width="65%" height="140px">
+                        <p>Electronics</p>
+            </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card rounded-circle">
+                    <div class="card-body text-center">
+                        <img th:src="@{/css/img/Beauty.jpeg}"  width="65%" height="140px">
+                        <p>Beauty</p>
+                    </div>
+                </div>
+            </div><div class="col-md-2">
+            <div class="card rounded-circle">
+                <div class="card-body text-center">
+                    <img th:src="@{/css/img/Clothes.jpeg}"  width="65%" height="140px">
+                    <p>Clothes</p>
+                </div>
+            </div>
+        </div><div class="col-md-2">
+            <div class="card rounded-circle">
+                <div class="card-body text-center">
+                    <img th:src="@{/css/img/Laptop.jpeg}"  width="65%" height="140px">
+                    <p>Laptop</p>
+                </div>
+            </div>
+        </div><div class="col-md-2">
+            <div class="card rounded-circle">
+                <div class="card-body text-center">
+                    <img th:src="@{/css/img/Mobile.jpeg}"  width="65%" height="140px">
+                    <p>Mobile</p>
+                </div>
+            </div>
+        </div><div class="col-md-2">
+            <div class="card rounded-circle">
+                <div class="card-body text-center">
+                    <img th:src="@{/css/img/Book.jpeg}"  width="65%" height="140px">
+                    <p>Book</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <!--End Category Module-->
+
+        <!-- Start Latest Product Module-->
+        <div class="container-fluid bg-light p-3">
+            <p class="text-center fs-4">Latest Product</p>
+
+            <div class="row g-3">
+
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img th:src="@{/css/img/Laptop.jpeg}" width="65%">
+                            <p>HP Laptop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img th:src="@{/css/img/Laptop.jpeg}" width="65%">
+                            <p>HP Laptop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img th:src="@{/css/img/Laptop.jpeg}" width="65%">
+                            <p>HP Laptop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img th:src="@{/css/img/Laptop.jpeg}" width="65%">
+                            <p>HP Laptop</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- End Latest Product Module-->
+    </section>
+</div>
+</body>
+</html>
